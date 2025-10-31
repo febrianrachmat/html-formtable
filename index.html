@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scaled=1.0">
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <header style="background: black;color: white;text-align: center;padding: 20px;font-size:large;"
+            <h1>Student Registration Form</h1>
+            <nav>
+                <a href="#personal-information" style="text-decoration: none;color: white;"> Personal Information</a>
+                <span style="margin-left: 10px;margin-right: 10px;">|</span>
+                <a href="academic-information" style="text-decoration: none;color: white;">Academic Information</a>
+                <span style="#" style="margin-left: 10 px; margin-right: 10px;">|</span>
+                <a href="additionals-information" style="text-decoration: none;color: white;">Additionals Information</a>
+                <span style="#" style="margin-left: 10 px; margin-right: 10px;">|</span>
+            </nav>
+        </header><br>
+        <main style="padding: 30px;">
+            <form>
+                <section id="personal-information" style="margin-bottom: 30px;">
+                    <fieldset>
+                        <legend><strong>Personal Information</strong></legend><br>
+                        <label for="name">Full Name</label><br>
+                        <input type="text" id="name" name="name" required placeholder="Young Lex"><br><br>
+                        
+                        <label for="Email">Email</label><br>
+                        <input type="email" id="email" email="name" required placeholder="You@Email"><br><br>
+                        
+                        <label for="Password">Password</label><br>
+                        <input type="password" id="password" name="password" required placeholder="Your Password"><br><br>
+                        
+                        <label for="date">Date of Birth</label><br>
+                        <input type="date" id="date" name="date" required/><br><br>                        
+                        
+                        <label>Gender</label><br>
+                        <label for="gender">Male</label>
+                        <input type="radio" id="gender" value="Male" required/><br>
+                        <label for="gender">Female</label>
+                        <input type="radio" id="gender" value="Female" required/><br>
+                    </fieldset>
+                </section>
+                <section id="academic-information" style="margin-bottom: 30px;">
+                    <fieldset>
+                        <legend><strong>Academic Information</strong></legend><br>
+
+                        <label for="program">Study Program<label><br>
+                        <select id="program" name="program">
+                            <option value="">--Select Program--</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Physics">Physics</option>
+                            <option value="Biology">Biology</option>
+                            <option value="Chemist">Chemist</option>
+                            <option value="Social-Language">Social-Language</option>
+                            </select><br><br>
+
+                        <label>Languages Known :</label><br>
+                        <input type="checkbox" id="english" name="Language" value="english">
+                        <label for="english">English</label><br>
+                        <input type="checkbox" id="Indonesian" name="Language" value="Indonesian">
+                        <label for="Indonesian">Indonesian</label><br>
+                        <input type="checkbox" id="Other" name="Language" value="Other">
+                        <label for="Other">Other</label><br><br>
+              
+                        <label for="photo">Upload Profile Photo:</label><br>
+                        <input type="file" id="photo" name="photo">
+                    </fieldset>
+                </section>
+
+                <section id="additionals-information" style="margin-bottom: 30px;">
+                    <fieldset>
+                        <legend><strong>Additionals Information</strong></legend><br>
+
+                        <label for="motivation">Motivation<label><br>
+                        <textarea id="motivation" name="motivation" rows="5" cols="30"></textarea><br><br>
+
+                        <label for="how-do-you-know-about-this">How Do You Know About This<label><br>
+                        <textarea id="how-do-you-know-about-this" name="how-do-you-know-about-this" rows="5" cols="30"></textarea><br><br>
+                    </fieldset>
+
+                    <input type="reset" value="Reset Form">
+                    <input type="submit" value="Submit Form">
+
+                </section>
+            </form>
+        </main>
+    </body>
+</html>
